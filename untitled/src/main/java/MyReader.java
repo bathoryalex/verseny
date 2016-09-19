@@ -36,14 +36,8 @@ public class MyReader {
                 Cell cell = cellIterator.next();
 
                 switch (cell.getCellType()) {
-                    case Cell.CELL_TYPE_STRING:
-                        result += cell.getStringCellValue();
-                        break;
                     case Cell.CELL_TYPE_NUMERIC:
                         result += Integer.valueOf((int) cell.getNumericCellValue());
-                        break;
-                    case Cell.CELL_TYPE_BOOLEAN:
-                        result += cell.getBooleanCellValue();
                         break;
                     default :
 
